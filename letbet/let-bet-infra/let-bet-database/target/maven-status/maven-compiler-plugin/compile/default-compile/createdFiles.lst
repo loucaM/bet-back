@@ -1,0 +1,4 @@
+com\bet\app\document\AthleteDAO.class
+com\bet\app\document\AthletePostgresRepository.class
+com\bet\app\document\AthleteMapper.class
+com\bet\app\document\AthleteDocument.class

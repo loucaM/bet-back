@@ -11,5 +11,4 @@ public class Athlete {
     private String name;
     private String firstname;
     private String country;
-    private String reactionTime;
 }

@@ -1,4 +1,5 @@
 com\bet\app\entity\StartList.class
+com\bet\app\entity\AthleteRepository.class
 com\bet\app\entity\Bet.class
 com\bet\app\entity\Athlete.class
 com\bet\app\entity\Event.class

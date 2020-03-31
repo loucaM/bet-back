@@ -1,0 +1,13 @@
+version: '3.3'
+services:
+    database:
+      image: 'mongo'
+      container_name: 'mongo-bet'
+      environment:
+        - MONGO_INITDB_DATABASE=Athlete
+        - MONGO_INITDB_ROOT_USERNAME=louca
+        - MONGO_INITDB_ROOT_PASSWORD=secret
+      volumes:
+        - ./mongo-volumes:/var/lib/mongo/data
+      ports:
+        - 27017:27017

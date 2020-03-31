@@ -6,6 +6,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+import java.util.stream.Collectors;
+
 @Repository
 public class AthleteDAO implements AthleteRepository {
 
@@ -20,6 +23,16 @@ public class AthleteDAO implements AthleteRepository {
     @Override
     public void create(Athlete athlete) {
         athleteMongoDAO.save(AthleteMapper.toDocument(athlete));
+    }
+
+    @Override
+    public List<Athlete> getAll() {
+        return athleteMongoDAO.findAll().stream().map(AthleteMapper::toEntity).collect(Collectors.toList());
+    }
+
+    @Override
+    public List<Athlete> getByStartList() {
+        return null;
     }
 }
 

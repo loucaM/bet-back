@@ -1,4 +1,4 @@
-package com.bet.app.document;
+package com.bet.app.document.athlete;
 
 import lombok.Data;
 import lombok.experimental.Accessors;

@@ -8,4 +8,5 @@ import java.util.List;
 public class StartList {
 
     List<Athlete> athletes;
+    int heatNUmber;
 }

@@ -1,4 +1,4 @@
-package com.bet.app.document;
+package com.bet.app.document.athlete;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.Query;
@@ -11,5 +11,6 @@ public interface AthleteMongoDAO extends MongoRepository<AthleteDocument, String
 
     List<AthleteDocument> findAll();
 
-    @Query()
+    @Query("")
+    List<AthleteDocument> findByStartList();
 }
